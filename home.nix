@@ -42,20 +42,4 @@
     };
   };
 
-  programs.emacs = {
-    enable = true;
-    # ... other emacs settings ...
-    extraPackages = epkgs: with epkgs; [
-      nix-ts-mode
-      # Also install treesit grammars for best results
-      treesit-grammars.with-all-grammars
-    ];
-    # This automatically adds the necessary elisp configuration
-    # to load the mode.
-  };
-
-  # Make sure treesitter is enabled in general
-  # (if you are not using an overlay that does this automatically)
-  # programs.treesitter.enable = true; 
-
 }
