@@ -149,6 +149,7 @@
   unzip
   lf
   xournalpp
+  gparted
   ];
 
 # Some programs need SUID wrappers, can be configured further or are
